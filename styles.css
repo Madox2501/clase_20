@@ -1,0 +1,204 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #151cee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.movieContainer{
+    background-color: #222224;
+    border-radius: 10px;
+    padding: 40px;
+    width: 80vw;
+
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    color: #eebb15;
+    font-size: 40px;
+}
+
+
+
+.movies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+
+/*
+.movies img{
+    width: 200px;
+    height: auto;
+    
+}
+*/
+
+.movies img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.movies h3,
+.movies p {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.movie{
+    background-color: #f0f0f0;
+    border: 1px solid;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/*end styles index*/
+
+
+/* estilos detail*/
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #151cee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+/* Encabezado */
+h1#movie-title {
+    color: #eebb15;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.volver-box {
+    background-color: #333;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    display: inline-block;
+}
+
+a.volver {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+a.volver:hover {
+    color: #eebb15;
+}
+
+
+/* Contenedor global */
+.wrapper {
+    background-color: #222224;
+    border-radius: 12px;
+    padding: 40px;
+    width: 90vw;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* === Sección superior: póster e info === */
+.movie-info {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.movie-info img {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.details {
+    flex: 1;
+
+}
+.details p {
+    margin: 10px 0;
+    color: #ddd;
+}
+.details strong {
+    color: #eebb15;
+}
+
+/* === Sección inferior: tráiler y casting === */
+.media-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+/* Tráiler a la izquierda */
+.trailer {
+    flex: 1 1 48%;
+}
+.trailer h2 {
+    color: #eebb15;
+    margin-bottom: 10px;
+}
+#trailer-container iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Reparto a la derecha */
+.actors {
+    flex: 1 1 48%;
+    background-color: #333;
+    border-radius: 6px;
+    margin-top: 20px;
+    padding: 10px; 
+}
+.actors h2 {
+    color: #eebb15;
+    margin-bottom: 10px;
+}
+
+.actors-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+}
+.actor {
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 10px;
+    color: black;
+}
+.actor img {
+    width: 100%;
+    max-width: 100px;
+    border-radius: 6px;
+    margin-bottom: 5px;
+}
